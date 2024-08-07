@@ -1,0 +1,52 @@
+---
+import Project from '../components/Project.astro';
+---
+
+<div class="section">
+  <Project
+    title="Estimator"
+  >
+    <img
+      src="/estimator.png"
+      alt="Estimator"
+      slot="header"
+    />
+    Estimator is a private tool that automates roofing and siding estimates. 
+  </Project>
+
+  <Project
+    title="Soulbound"
+  >
+    <img
+      src="/Lia.png"
+      alt="Soulbound"
+      slot="header"
+    />
+    Soulbound is a 2D pixel art platformer with precise and fast paced movement. 
+  </Project>
+
+  <Project
+    title="Personal Website"
+  >
+    <img
+      src="/personal.png"
+      alt="Personal"
+      slot="header"
+    />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada euismod nibh.
+  </Project>
+</div>
+
+<style>
+  .section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: 540px) {
+    .section {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

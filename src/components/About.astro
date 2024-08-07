@@ -1,0 +1,113 @@
+---
+import Logo from './Logo.astro';
+import Github from '../icons/Github.astro'
+import Twitter from '../icons/Twitter.astro'
+---
+
+<div class="about">
+  <div class="logo">
+    <!-- <Logo /> -->
+    <img
+    style="border-radius: 100%; box-shadow: 4px 4px 12px -4px rgba(0,0,0,0.49);"
+    src="/about.jpg"
+    alt="Estimator"
+    slot="header"
+    />
+  </div>
+  <div class="info">
+    <h1 class="title">
+        Austin
+      </a>
+    </h1>
+    <p class="description">
+      I'm a developer and would very much like a job, gib me job pls.
+    </p>
+    <div class="socials">
+      <div class="social">
+        <a
+        class="social"
+        href="https://i.kym-cdn.com/entries/icons/original/000/019/630/ihnmotp.jpg"
+        target="_blank"
+        >
+        <Github />
+      </div>
+      <div class="social">
+        <a
+        class="social"
+        href="https://i.kym-cdn.com/entries/icons/original/000/019/630/ihnmotp.jpg"
+        target="_blank"
+        >
+        <Twitter />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing);
+    margin: 48px auto;
+    max-width: 320px;
+  }
+
+  .logo {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) / 2);
+  }
+
+  .title {
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .description {
+    margin: 0;
+    text-align: center;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .social h2 {
+    font-family: var(--font-family-base);
+    color: var(--font-color-secondary);
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 540px) {
+    .about {
+      flex-direction: row;
+      margin: 96px auto;
+      max-width: 520px;
+    }
+    .title,
+    .description {
+      text-align: left;
+    }
+    .socials {
+      justify-content: start;
+    }
+  }
+</style>
