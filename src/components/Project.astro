@@ -1,25 +1,28 @@
 ---
 export interface Props {
   title: string;
+  link: string
 }
 
-const { title } = Astro.props;
+const { title, link } = Astro.props;
 ---
 
 <div class="card">
-  <div class="preview">
-    <slot name="header" />
-  </div>
-  <div class="info">
-    <h3 class="title">{title}</h3>
-    <p class="description">
-      <slot />
-    </p>
-  </div>
+  <a href={link}>
+    <div class="preview">
+      <slot name="header" />
+    </div>
+    <div class="info">
+      <h3 class="title">{title}</h3>
+      <p class="description">
+        <slot />
+      </p>
+    </div>
+  </a>
 </div>
 
 <style>
-  .card {
+  .card a {
     display: flex;
     gap: 12px;
     align-items: center;
