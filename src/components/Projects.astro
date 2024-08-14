@@ -1,42 +1,57 @@
 ---
 import Project from '../components/Project.astro';
+import LargeProject from '../components/LargeProject.astro';
 ---
 
 <div class="section">
+  <LargeProject
+  title="Constructor"
+  href="https://github.com/awheelr/constructor"
+>
+  <img
+    src="/constructor.png"
+    alt="Estimator"
+    slot="header"
+  />
+  Constructor is a private tool that automates roofing and siding estimates. 
+  <slot slot="details">built with Visual Basic</slot>
+</LargeProject>
+
+<LargeProject
+title="Soulbound"
+href=""
+>
+<img
+src="/soulbound.png"
+alt="Soulbound"
+slot="header"
+/>
+Soulbound is a 2D pixel art platformer with precise and fast paced movement. 
+<slot slot="details">built with Unity</slot>
+</LargeProject>
+
   <Project
-    title="Constructor"
-    link="https://github.com/awheelr/constructor"
+    title="Vivamus"
+    href="https://github.com/awheelr/constructor"
   >
     <img
-      src="/constructor.png"
+      src="/tinytree.png"
       alt="Estimator"
       slot="header"
     />
-    Constructor is a private tool that automates roofing and siding estimates. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus dapibus tristique.
   </Project>
 
   <Project
-    title="Soulbound"
-    link=""
+    title="Nulla Faucibus"
+    href=""
   >
     <img
-      src="/Lia.png"
+      src="/dummy.png"
       alt="Soulbound"
       slot="header"
     />
-    Soulbound is a 2D pixel art platformer with precise and fast paced movement. 
-  </Project>
-
-  <Project
-    title="Personal Website"
-    link=""
-  >
-    <img
-      src="/personal.png"
-      alt="Personal"
-      slot="header"
-    />
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada euismod nibh.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus dapibus tristique.
   </Project>
 </div>
 

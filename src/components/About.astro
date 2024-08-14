@@ -2,6 +2,7 @@
 import Logo from './Logo.astro';
 import Github from '../icons/Github.astro'
 import Twitter from '../icons/Twitter.astro'
+import Mail from '../icons/Mail.astro'
 ---
 
 <div class="about">
@@ -9,8 +10,8 @@ import Twitter from '../icons/Twitter.astro'
     <!-- <Logo /> -->
     <img
     style="border-radius: 100%; box-shadow: 4px 4px 12px -4px rgba(0,0,0,0.49);"
-    src="/about.jpg"
-    alt="Estimator"
+    src="/avatar.jpg"
+    alt="Avatar"
     slot="header"
     />
   </div>
@@ -26,7 +27,7 @@ import Twitter from '../icons/Twitter.astro'
       <div class="social">
         <a
         class="social"
-        href="https://i.kym-cdn.com/entries/icons/original/000/019/630/ihnmotp.jpg"
+        href="https://x.com/austinwheelr"
         target="_blank"
         >
         <Github />
@@ -34,10 +35,18 @@ import Twitter from '../icons/Twitter.astro'
       <div class="social">
         <a
         class="social"
-        href="https://i.kym-cdn.com/entries/icons/original/000/019/630/ihnmotp.jpg"
+        href="https://github.com/awheelr"
         target="_blank"
         >
         <Twitter />
+      </div>
+      <div class="social">
+        <a
+        class="social"
+        href="mailto:contact@austinwheeler.net"
+        target="_blank"
+        >
+        <Mail />
       </div>
     </div>
   </div>
@@ -79,8 +88,8 @@ import Twitter from '../icons/Twitter.astro'
 
   .socials {
     display: flex;
-    justify-content: center;
-    gap: 14px;
+    align-items: center;
+    gap: 10px;
   }
 
   .social {
